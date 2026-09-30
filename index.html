@@ -5,17 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dustline Jukebox</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Holtwood+One+SC&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Phantasm</h1>
-        <P>Letting the spirits of old vinyl breathe back into the room.</P>
+        <h1>Dustline Jukebox</h1>
+        <p>Letting the spirits of old vinyl breathe back into the room.</p>
     </header>
     <section id="now-playing">
-        <p>Now playing</p>
-        <span id="np-code">A3</span>
+        <p class="label">Now playing</p>
+        <span id="np-code">--</span>
         <h2 id="np-title">Nothing playing</h2>
-        <p id="np-artist">Nothing playing</p>
+        <p id="np-artist">-</p>
         <div class="progress-row">
             <span id="time-now">0:00</span>
             <div class="bar">
@@ -25,22 +28,35 @@
         </div>
         <audio id="player"></audio>
     </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
+    <main>
+        <section id="library">
+            <h2>The song list</h2>
+            <ul id="track-list">
+                <li>
+                    <span class="code">A1</span>
+                    <span class="title">sample song</span>
+                    <button>Insert coin</button>
+                </li>
+            </ul>
+        </section>
+        <section id="queue">
+            <h2>Up next</h2>
+            <ol id="queue-list">
+                <li>
+                    <span class="code">A1</span>
+                    <span class="title">sample song</span>
+                    <button>Remove</button>
+                </li>
+            </ol>
+            <p id="queue-empty">The queue is empty</p>
+        </section>
+    </main>
+    <section id="controls">
+        <button id="play-pause">play</button>
+        <button id="skip">skip</button>
+        <label for="volume">volume</label>
+        <input type="range" id="volume" min="0" max="1" step="0.01" value="0.5">
+    </section>
     <script src="script.js"></script>
 </body>
 </html>
