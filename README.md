@@ -62,6 +62,6 @@ I used Claude (an AI assistant) as a tutor while building this, since I started 
 - It gave me small step-by-step guides, and I typed every line of the code myself.
 - It reviewed the code I pasted and explained my bugs, such as a missing function call and a variable I never created.
 - It suggested the visual direction and fonts, which I approved.
-- A few small pieces were given to me directly: a re-indented block of HTML, a CSS fix for the sticker positions.
+- A few small pieces were given to me directly: a re-indented block of HTML, showQueue function code and a CSS fix for the sticker positions.
 
 I chose the music, made the stickers, tested everything and deployed the site.
