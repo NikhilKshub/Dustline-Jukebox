@@ -3,31 +3,31 @@ const tracks = [
         code: "A1",
         title: "Ragtime",
         artist: "Back_Drop",
-        file: "audio/back_drop-ragtime.mp3"
+        file: "assets/back_drop-ragtime.mp3"
     },
     {
         code: "A2",
         title: "Moonlight Sonata",
         artist: "GregorQuendel",
-        file: "audio/beethoven-moonlight-sonata.mp3"
+        file: "assets/beethoven-moonlight-sonata.mp3"
     },
     {
         code: "A3",
         title: "Für Elise",
         artist: "Clavier-Music",
-        file: "audio/clavier-fur-elise-beethoven.mp3"
+        file: "assets/clavier-fur-elise-beethoven.mp3"
     },
     {
         code: "A4",
         title: "Black Sugar",
         artist: "MoonpetalMedia",
-        file: "audio/moonpetalmedia-black-sugar.mp3"
+        file: "assets/moonpetalmedia-black-sugar.mp3"
     },
     {
         code: "A5",
         title: "In The Saloon",
         artist: "Piano_Music",
-        file: "audio/music-in-the-saloon.mp3"
+        file: "assets/music-in-the-saloon.mp3"
     },
 ];
 

@@ -12,13 +12,14 @@
 <body>
     <header>
         <h1>Dustline Jukebox</h1>
-        <p>Letting the spirits of old vinyl breathe back into the room.</p>
+        <p>Drop a coin. Pick a tune.</p>
     </header>
     <section id="now-playing">
         <p class="label">Now playing</p>
         <span id="np-code">--</span>
         <h2 id="np-title">Nothing playing</h2>
         <p id="np-artist">-</p>
+
         <div class="progress-row">
             <span id="time-now">0:00</span>
             <div class="bar">
@@ -26,37 +27,34 @@
             </div>
             <span id="time-total">0:00</span>
         </div>
+
+        <section id="controls">
+            <button id="play-pause">Play</button>
+            <button id="skip">Skip</button>
+            <label for="volume">Volume</label>
+            <input type="range" id="volume" min="0" max="1" step="0.01" value="0.5">
+        </section>
+
         <audio id="player"></audio>
     </section>
     <main>
         <section id="library">
             <h2>The song list</h2>
-            <ul id="track-list">
-                <li>
-                    <span class="code">A1</span>
-                    <span class="title">sample song</span>
-                    <button>Insert coin</button>
-                </li>
-            </ul>
+            <ul id="track-list"></ul>
         </section>
         <section id="queue">
             <h2>Up next</h2>
-            <ol id="queue-list">
-                <li>
-                    <span class="code">A1</span>
-                    <span class="title">sample song</span>
-                    <button>Remove</button>
-                </li>
-            </ol>
+            <ol id="queue-list"></ol>
             <p id="queue-empty">The queue is empty</p>
         </section>
     </main>
-    <section id="controls">
-        <button id="play-pause">play</button>
-        <button id="skip">skip</button>
-        <label for="volume">volume</label>
-        <input type="range" id="volume" min="0" max="1" step="0.01" value="0.5">
-    </section>
+    <img src="assets/sticker1.png" alt="" class="sticker s1">
+    <img src="assets/sticker2.png" alt="" class="sticker s2">
+    <img src="assets/sticker3.png" alt="" class="sticker s3">
+    <img src="assets/sticker4.png" alt="" class="sticker s4">
+
+<script src="script.js"></script>
+
     <script src="script.js"></script>
 </body>
 </html>
